@@ -1,11 +1,3 @@
-<!--
- * @Author: your name
- * @Date: 2021-08-11 16:55:39
- * @LastEditTime: 2021-08-11 16:55:51
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /mygithub/cmake/makefile/learning.md
--->
 
 https://blog.csdn.net/weixin_42491857/article/details/80741060
 

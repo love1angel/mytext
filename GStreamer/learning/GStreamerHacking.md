@@ -10,23 +10,32 @@ $ sudo apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libg
 
 安装gcc
 
-添加库到gcc命令中去字符串
+添加库到gcc命令中字符串
 
 ``` shell
 pkg-config --cflags --libs gstreamer-1.0
 ```
 
+If your application is built with the help of libtool, e.g. when using automake/autoconf as a build system, you have to run the `configure` script from inside the `gst-sdk-shell` environment.
+
 ## 编译
 
 ``` shell
+
 $ gcc basic-tutorial-1.c -o basic-tutorial-1 `pkg-config --cflags --libs gstreamer-1.0`
 ```
 
-GStreamer函数、结构体和类型使用gst_前缀，而GLib和GObject使用g\_
+GObject and GLib
+
+GStreamer函数、结构体和类型使用gst_ prefix
+
+而GLib和GObject使用g\_
 
 
 
 ## code核心
+
+1. gst_parse_launch()从文本构建pipeline
 
 - 通过元素构建pipeline，pipeline最终也会作为一个元素
 
