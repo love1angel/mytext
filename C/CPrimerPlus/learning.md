@@ -172,11 +172,15 @@ GCC调用C11标准
 
 gcc -std=c11 helloworld.c
 
-- LLVM: clang编译器
+- LLVM项目: Clang编译器
 
 2. Windows
 
 不要用字处理文件，保存为纯文本文件
+
+IDE
+
+DLL
 
 3. Mac
 
