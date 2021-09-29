@@ -1,0 +1,14 @@
+target = app
+obj = main.o add.o minus.o
+CC = gcc
+CFLAGS = -std=c99
+
+$(target):$(obj)
+	$(CC) $(obj) -o $(target)
+
+%.o:%.c
+	$(CC) $< -c $(CFLAGS)
+
+.PHONY:clean
+clean:
+	rm -f $(obj) $(target)

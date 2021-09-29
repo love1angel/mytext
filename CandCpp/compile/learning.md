@@ -34,7 +34,7 @@ $ nm ./lib/libMyTest.a
 
 # 运行
 $ gcc main.c -L lib/ -l MyTest -I include/ -o main
-## 错误，不指定静态库名	
+## 错误，不指定静态库名 
 $ gcc main.c -L lib/ -I include/ -o main
 ## 正确
 $ gcc main.c src/minus.o src/add.o -I include/ -o main
@@ -85,4 +85,3 @@ $ ldd main
 2. 写入相应的shellrc
 3. 放入usr/lib usr/local/lib
 4. 将libTest.so的绝对路径追加到/etc/ld.so.conf文件，用sudo ldconfig -v更新
-

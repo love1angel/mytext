@@ -1,0 +1,15 @@
+app:main.o add.o minus.o
+	gcc main.o add.o minus.o -o main -std=c99
+
+main.o:main.c
+	gcc main.c -c -std=c99
+
+add.o:add.c
+	gcc add.c -c -std=c99
+
+minus.o:minus.c
+	gcc minus.c -c -std=c99
+
+.PHONY:clean
+clean:
+	rm main -f
